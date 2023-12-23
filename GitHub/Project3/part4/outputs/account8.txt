@@ -1,0 +1,19 @@
+account 8:
+Current Balance:	3224958.89
+Current Balance:	3229743.40
+Current Balance:	3183340.10
+Current Balance:	3090730.00
+Current Balance:	3074280.36
+Current Balance:	3073537.80
+Current Balance:	3044721.40
+Current Balance:	3045067.33
+Current Balance:	2985469.89
+Current Balance:	2978584.58
+Current Balance:	2934197.74
+Current Balance:	2925923.82
+Current Balance:	2895984.09
+Current Balance:	2873684.68
+Current Balance:	2822426.04
+Current Balance:	2830228.22
+Current Balance:	2819635.59
+Current Balance:	2788273.79

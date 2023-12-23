@@ -1,0 +1,19 @@
+account 1:
+Current Balance:	114859.01
+Current Balance:	117156.19
+Current Balance:	119499.32
+Current Balance:	121889.30
+Current Balance:	124327.09
+Current Balance:	126813.63
+Current Balance:	129349.90
+Current Balance:	131936.90
+Current Balance:	134575.64
+Current Balance:	137267.15
+Current Balance:	140012.49
+Current Balance:	142812.74
+Current Balance:	145669.00
+Current Balance:	148582.38
+Current Balance:	151554.03
+Current Balance:	154585.11
+Current Balance:	157676.81
+Current Balance:	160830.35
