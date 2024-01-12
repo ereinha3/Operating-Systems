@@ -1,0 +1,26 @@
+==209464== Memcheck, a memory error detector
+==209464== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==209464== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==209464== Command: ./bank input-1.txt
+==209464== 
+Thread 1 has terminated
+Thread 8 has terminated
+Thread 6 has terminated
+Thread 0 has terminated
+Thread 4 has terminated
+Thread 3 has terminated
+Thread 5 has terminated
+Thread 7 has terminated
+Thread 2 has terminated
+Thread 9 has terminated
+Updating balances...
+Bank thread has exited
+==209464== 
+==209464== HEAP SUMMARY:
+==209464==     in use at exit: 0 bytes in 0 blocks
+==209464==   total heap usage: 1,270,141 allocs, 1,270,141 frees, 72,827,858 bytes allocated
+==209464== 
+==209464== All heap blocks were freed -- no leaks are possible
+==209464== 
+==209464== For lists of detected and suppressed errors, rerun with: -s
+==209464== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
