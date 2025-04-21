@@ -1,9 +1,61 @@
-Master Control Program (MCP) -- Ghost in the Shell
-The MCP is a primitive operating system that was originally created by Burroughs Corporation's Medium Systems. It was capable of executing multiple tasks in parallel. At the time, it was the first OS to manage multiple processors, the first commercial implementation of virtual memory, and the first OS written exclusively in a higher-level language.
-In this version of the MCP, we were required to create a program which would launch a pool of sub-processes from a given input file. The program will allocate a process per command to parse the output and allow for multiprocessing to occur.
-In the first part of this project, I created enough child processes to handle each of the commands. I had the parent thread wait for the child processes to finish and exit once this occurred. 
-In the second part, I created a workload organizer in the main thread such that the parent processes could signal to the child processes to start and stop. This would initially start all child processes and then stop them all. 
-In the third part, the workload organizer was expanded such that each child process was only allowed to execute for a given amount of time. The parent process would kill all child processes once this amount of time had passed or once all child processes had finished. 
-In the fourth part, I added functional information to be printed to terminal as the top command would. This only printed relevant information for the given process in a syntaxically understandable format.
-In the last part, I implemented the Round Robin Scheduling algorithm to allocate a specific amount of time to the CPU for each process. This was done by incorporating a quantum that each process would be allowed to execute for before moving on to the next process.
-The project was created as part of the CS415 Operating Systems course at the University of Oregon, taught by Professor Allen Mallony and is intended for educational purposes only.
+# Project 2: Process Scheduling Implementation
+
+This project implements various process scheduling algorithms in C, demonstrating core operating system concepts related to process management and scheduling.
+
+## Project Structure
+
+- `part1.c`: Basic process creation and management
+- `part2.c`: First-Come-First-Serve (FCFS) scheduling
+- `part3.c`: Round Robin scheduling
+- `part4.c`: Priority scheduling
+- `part5.c`: Multi-level feedback queue
+- `cpubound.c`: CPU-bound process simulation
+- `iobound.c`: I/O-bound process simulation
+- `Makefile`: Build configuration
+
+## Test Programs
+
+- `cpubound.c`: Simulates CPU-intensive processes
+- `iobound.c`: Simulates I/O-intensive processes
+- `input.txt`: Configuration file for testing
+
+## Implementation Details
+
+The project is divided into five parts, each implementing different scheduling algorithms:
+1. Basic Process Management
+2. FCFS Scheduling
+3. Round Robin Scheduling
+4. Priority-based Scheduling
+5. Multi-level Feedback Queue
+
+## Building and Running
+
+To compile all parts:
+```bash
+make all
+```
+
+To run individual parts:
+```bash
+./part1
+./part2
+./part3
+./part4
+./part5
+```
+
+## Documentation and Results
+
+- `Project_2_Description.pdf`: Original project requirements
+- `Screenshots/`: Directory containing execution results
+- `logs/`: Directory containing execution logs
+
+## Performance Analysis
+
+Each scheduling algorithm has been tested with both CPU-bound and I/O-bound processes to analyze:
+- Throughput
+- Response time
+- Fairness
+- Resource utilization
+
+Detailed results and comparisons can be found in the Screenshots directory.

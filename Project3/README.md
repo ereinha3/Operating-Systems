@@ -1,9 +1,49 @@
-Duck Bank
-The purpose of this project is to take in an input file containing 120,000 lines of commands.
-These commands are to be parsed over 10 different threads to achieve multiprocessing and better runtimes. 
-A total of 12 different threads were running, 10 as specified to handle the transactions, 1 was designated to update the balances of the accounts every 5000 total transaction, and the last was the initial thread which waited for all threads to finish to signal the end of processing.
-In part 1, we were required to create a single threaded solution to this problem. This was not too difficult, but my implementation required changing later. Initially, I dynamically passed lines of the file into the transaction processor function. Doing this dynamically did not permit multiprocessing, so implementation was changed in part 2 to statically create a large list containing all 120,000 transactions, where threads were given parsed portions of the total input.
-In part 2, we created a multithreaded solution. In this solution, we were told to create 10 additional threads to process the transactions and one additional thread to process bank updates. These threads required the use of mutex locks so they would not access or modify information concurrently, creating deadlocks.
-In part 3, we added on to this solution to create criteria that all accounts would be updated by their reward rate after 5000 transaction had been processed. 
-In part 4, we expanded on this by creating a new savings bank process that took in 20% of the initial account balances. These savings accounts were given a constant reward rate of 2% and were updated each time the bank thread updated the balances. This was done through signaling using the kill command and user defined signals.
-The project was created as part of the CS415 Operating Systems course at the University of Oregon, taught by Professor Allen Mallony and is intended for educational purposes only.
+# Project 3: Advanced Operating System Concepts
+
+This project explores advanced operating system concepts through multiple implementations divided into four main parts.
+
+## Project Structure
+
+The project is organized into four main parts:
+
+- `part1/`: First implementation component
+- `part2/`: Second implementation component
+- `part3/`: Third implementation component
+- `part4/`: Fourth implementation component
+
+## Documentation
+
+- `P3 - Description.pdf`: Detailed project requirements and specifications
+- `p3reportFinal.pdf`: Comprehensive project report and analysis
+
+## Implementation Details
+
+Each part of the project focuses on different aspects of operating system concepts:
+
+### Part 1
+Implementation of basic operating system functionality.
+
+### Part 2
+Advanced memory management and process synchronization.
+
+### Part 3
+File system implementation and management.
+
+### Part 4
+System call implementation and kernel-level programming.
+
+## Building and Running
+
+Each part contains its own build instructions and can be run independently. Please refer to the individual README files within each part's directory for specific instructions.
+
+## Project Report
+
+A detailed analysis of the implementation, challenges faced, and results can be found in `p3reportFinal.pdf`. This includes:
+- Design decisions
+- Implementation challenges
+- Performance analysis
+- Testing results
+
+## Requirements
+
+Please refer to `P3 - Description.pdf` for detailed requirements and specifications for each part of the project.
